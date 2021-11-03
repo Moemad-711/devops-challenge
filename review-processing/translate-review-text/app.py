@@ -23,6 +23,12 @@ translator = pipeline(task='text2text-generation', model='facebook/m2m100_418M')
 def handler(event, context):
     '''
     This is a lambda fucntion used to translate review text if needed and trigger the sentimetn analyzer text.
+
+    Input: 
+        Event: describe the event trigger from the S3 bucket and includes the JSON Objects with the detected original review text language.
+
+    Return: 
+        None
     '''
     # Logging the trigger event
     print(str(event))

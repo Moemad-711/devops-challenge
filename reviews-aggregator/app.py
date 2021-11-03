@@ -21,6 +21,12 @@ def handler(event, context):
     This is a lambda fucntion used to store the new movie reviews in a DynamoDB and 
     trigger the processing lambda fucntion if the reviews count surpassed a certain threshold. 
     It is triggered by the S3 bucket.
+    
+    Input: 
+        Event: describe the event trigger from the S3 bucket and includes the JSON file uploaded to the bucket.
+
+    Return: 
+        None
     '''
     # Logging the trigger event
     print(str(event))

@@ -24,6 +24,12 @@ def handler(event, context):
     '''
     This is a lambda fucntion used to detect languages of the new movie reviews and then invoke the lambda function responsible for translation.
 
+    Input: 
+        Event: describe the event trigger from the S3 bucket and includes the JSON Objects to Processed.
+
+    Return: 
+        None
+
     '''
     # Logging the trigger event
     print(str(event))

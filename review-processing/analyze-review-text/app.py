@@ -24,6 +24,13 @@ def handler(event, context):
     '''
     This is a lambda fucntion used to process the new movie reviews. It is triggered by the S3 bucket.
 
+    Input: 
+        Event: describe the event trigger from the S3 bucket and includes the JSON Objects with 
+        the detected original review text language and translated review text.
+
+    Return: 
+        None
+
     '''
     # Logging the trigger event
     print(str(event))
